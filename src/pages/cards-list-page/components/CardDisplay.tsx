@@ -3,7 +3,6 @@ import Card from "./Card";
 
 const CardDisplay = () => {
   const { cards } = useAppSelector((state) => state.cards);
-  console.log(cards);
   return (
     <div className="flex flex-wrap justify-start gap-6 p-8">
       {cards.map((card) => (

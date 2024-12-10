@@ -67,12 +67,12 @@ const Filter = () => {
   ];
 
   return (
-    <div className="flex justify-center p-4 space-x-4">
+    <div className="flex justify-center p-4 space-x-4 flex-wrap gap-y-3">
       {filters.map((filter, index) => (
         <button
           key={index}
           onClick={filter.action}
-          className={`px-4 py-2 rounded transition duration-300 ease-in-out ${
+          className={`px-4 py-2 rounded transition duration-300 ease-in-out w-min ${
             selected === filter.label.toLocaleLowerCase()
               ? "bg-orange-500 text-white" // Active (selected) style
               : filter.filled
